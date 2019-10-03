@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+     <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+  <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+   
+   <title>Train Schedule</title>
+
+
+ </head>
+ <body>
+   <body background="https://stmed.net/sites/default/files/train-station-wallpapers-28950-7855836.jpg">
+  <div class="container">
+   <div class="jumbotron" style="background-color: teal; color: black">
+       <div class="container">
+         <h1 class="display-4">Anytime is Train Time</h1>
+         <h3>Choo Choo. Chee. Chee.</h3>
+       </div>
+     </div>
+     <div class="card">
+       <h4 class="card-header">Current Train Schedule</h5>
+       <div class="card-body">
+           <!--top of table -->
+           <table class="table table-striped">
+               <thead>
+                 <tr>
+                   <div="col">Train Name</div>
+                   <div="col">Destination</div>
+                   <div="col">Frequency (min)</div>
+                   <div="col">Next Arrival</div>
+                   <div="col">Minutes Away</div>
+                   
+                 </tr>
+               </thead>
+               <train body>
+                 <div>
+                   <div scope="row" id="trainName"></th>
+                   <div id="destination"></div>
+                   <div id="Frequency"></div>
+                   <div id="nextArrival"></div>
+                   <div id="minutesAway"></div>
+                   
+                   </div>
+               </train body>
+             </table>
+             <!--end of the table  -->
+             <!-- submit/form-->
+<div class="card">
+        <h5 class="card-header">Add Train</h5>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                  <label for="train name">Train Name</label>
+                  <input type="train name" class="form-control" id="train name" aria-describedby="name" placeholder="Trenton Express">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Destination</label>
+                    <input type="destination" class="form-control" id="destination" aria-describedby="city" placeholder="Trenton">
+                  </div>
+                  <div class="form-group">
+                    <!--use up and down arrowns for AM/PM-->
+                    <label for="time">First Train (HH:mm- military time) </label>
+                    <input type="time" class="form-control" id="time" aria-describedby="time" placeholder="ex: 03:00">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Frequency(min)</label>
+                  <input type="time in minutes" class="form-control" id="time in minutes" placeholder="25">
+                </div>
+                <!-- This is the submit button  -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+      </div>
+       </div>
+       <script src=".\train-schedule.js"></script>
+      </body>
+      </html>
+     
